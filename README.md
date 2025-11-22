@@ -1,25 +1,59 @@
-AIM:
-To implement JK flipflop using verilog and validating their functionality using their functional tables
-SOFTWARE REQUIRED:
-Quartus prime
-THEORY
-JK Flip-Flop
-JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
- 
-This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Qtt’ and R = KQtt in order to utilize the modified SR flip-flop for 4 combinations of inputs. The following table shows the state table of JK flip-flop.
- 
-Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop. Present Inputs Present State Next State
- 
-By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
- 
-The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
-Procedure
-/* write all the steps invloved */
-PROGRAM
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: */
-RTL LOGIC FOR FLIPFLOPS
-TIMING DIGRAMS FOR FLIP FLOPS
-RESULTS: Thus the JK flipflop using verilog and validating their functionality using their functional tables is implemented and verified.
+# FULL_ADDER_SUBTRACTOR
+
+Implementation-of-Full-Adder-and-Full-subtractor-circuit
+
+**AIM:**
+
+To design a Full Adder and Full Subtractor circuit and verify its truth table in Quartus using Verilog programming.
+
+**Equipments Required:**
+
+Hardware – PCs, Cyclone II , USB flasher
+
+Software – Quartus prime
+
+**Full Adder and Full Subtractor**
+
+**Full Adder**
+
+Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
+
+Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin 
+
+Carry = AB + ACin + BCin
+
+![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
+
+**Figure -1 FULL ADDER**
+
+**Full Subtractor**
+
+A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
+
+![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
+
+Diff = A ⊕ B ⊕ Bin 
+
+Borrow out = A'Bin + A'B + BBin
+
+**Truthtable**
+
+**Procedure**
+
+Write the detailed procedure here
+
+**Program:**
+
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+*/
+
+**RTL Schematic**
+
+**Output Timing Waveform**
+
+**Result:**
+
+Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
 
 
 
