@@ -36,8 +36,7 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
-
+DEVELOPED BY:BHAVITRA B REGISTER NUMBER:25012160
 **Procedure**
 
 Write the detailed procedure here
